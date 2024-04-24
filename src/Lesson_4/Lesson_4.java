@@ -8,11 +8,11 @@ public class Lesson_4 {
             checkSumSign();
             printColor();
             compareNumbers();
-            checkSum(4, 9);
+            System.out.println(checkSum(4,9));
             numPositiveOrNegative(-4);
-            isNegative(-100);
+            System.out.println(isNegative(-100));
             method8("Hello", 5);
-            method9(1999);
+            System.out.println(method9(1999));
             massive10();
             massive11();
             massive12();
@@ -57,7 +57,7 @@ public class Lesson_4 {
             }
         }
 
-        public static boolean checkSum(int num1, int num2) {
+         public static boolean checkSum(int num1, int num2) {
             int sum = num1 + num2;
             if (sum >= 10 && sum <= 20) {
                 return true;
@@ -86,11 +86,11 @@ public class Lesson_4 {
         }
 
         public static boolean method9(int year) {
-            if (year % 4 == 0) {
+            if (year % 400 == 0) {
                 return true;
             } else if (year % 100 == 0) {
                 return false;
-            } else if (year % 400 == 0) {
+            } else if (year % 4 == 0) {
                 return true;
             } else {
                 return false;
