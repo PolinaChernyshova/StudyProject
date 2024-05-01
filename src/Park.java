@@ -10,18 +10,18 @@ public class Park {
     }
 
     public class Attraction {
-        private String name;
+        private String attractionName;
         private int workingHours;
         private double cost;
 
-        public Attraction(String name, int workingHours, double cost) {
-            this.name = name;
+        public Attraction(String attractionName, int workingHours, double cost) {
+            this.attractionName = attractionName;
             this.workingHours = workingHours;
             this.cost = cost;
         }
 
-        public String getName() {
-            return name;
+        public String getAttractionName() {
+            return attractionName;
         }
 
         public int getWorkingHours() {
