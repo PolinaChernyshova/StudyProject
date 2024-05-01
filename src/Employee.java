@@ -1,4 +1,4 @@
-public class Person {
+public class Employee {
     private String name;
     private String position;
     private String email;
@@ -6,7 +6,7 @@ public class Person {
     private double salary;
     private int age;
 
-    public Person(String name, String position, String email, String phone, double salary, int age) {
+    public Employee(String name, String position, String email, String phone, double salary, int age) {
         this.name = name;
         this.position = position;
         this.email = email;
@@ -16,7 +16,7 @@ public class Person {
     }
 
 
-    public void printPersonInfo() {
+    public void printEmployeeInfo() {
         System.out.println("ФИО: " + name + "; должность: " + position + ";" +
                 " email: " + email + "; телефон: " + phone + "; зарплата: " + salary + ";" +
                 " возраст: " + age);
