@@ -8,11 +8,9 @@ public class Main {
         };
 
         try {
-            System.out.println(sumArrayElements(array));
-        } catch (MyArraySizeException e) {
+            System.out.println("Сумма чисел массива: " + sumArrayElements(array));
+        } catch (MyArraySizeException | MyArrayDataException e) {
             System.err.println(e.getMessage());
-        } catch (MyArrayDataException e) {
-            System.err.println(e);
         }
     }
 
