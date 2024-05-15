@@ -1,4 +1,4 @@
-public class Main {
+public class Lesson_6 {
     //вывод информации об объектах
     public static void main(String[] args) {
         //1
