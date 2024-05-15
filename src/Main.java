@@ -6,27 +6,22 @@ public class Main {
                 {"3", "3", "3", "3"},
                 {"4", "4", "4", "4"}
         };
-        checkArray(array);
-    }
 
-    public static void checkArray(String[][] array) {
         try {
-            checkArraySize(array);
-            int result = getArraySum(array);
-            System.out.println("Сумма элементов массива: " + result);
+            System.out.println(sumArrayElements(array));
         } catch (MyArraySizeException e) {
-            System.out.println("Ошибка размера: " + e.getMessage());
+            System.err.println(e.getMessage());
         } catch (MyArrayDataException e) {
-            System.out.println("Преобразование не удалось. " + e.getMessage());
+            System.err.println(e);
         }
     }
-    public static void checkArraySize(String[][] array) throws MyArraySizeException {
+
+    public static int sumArrayElements(String[][] array) throws MyArraySizeException, MyArrayDataException {
+        int sum = 0;
+
         if (array.length != 4 || array[0].length != 4) {
             throw new MyArraySizeException();
         }
-    }
-    public static int getArraySum(String[][] array) throws MyArrayDataException {
-        int sum = 0;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 try {
