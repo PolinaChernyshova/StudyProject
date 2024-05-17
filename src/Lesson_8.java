@@ -1,4 +1,4 @@
-public class Main {
+public class Lesson_8 {
     public static void main(String[] args) {
         String[][] array = {
                 {"1", "1", "1", "1"},
