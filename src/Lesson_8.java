@@ -16,12 +16,14 @@ public class Lesson_8 {
 
     public static int sumArrayElements(String[][] array) throws MyArraySizeException, MyArrayDataException {
         int sum = 0;
+        int rows = array.length;
+        int cols = array[0].length;
 
-        if (array.length != 4 || array[0].length != 4) {
+        if (rows!= 4 || cols != 4) {
             throw new MyArraySizeException();
         }
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[i].length; j++) {
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
                 try {
                     sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
