@@ -1,3 +1,5 @@
+package Lesson_6;
+
 public class Employees_array {
     public static void main(String[] args) {
         Employee[] employeesArray = new Employee[5];

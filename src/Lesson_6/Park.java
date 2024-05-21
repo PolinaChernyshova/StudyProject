@@ -1,3 +1,5 @@
+package Lesson_6;
+
 public class Park {
     private String name;
     private String city;

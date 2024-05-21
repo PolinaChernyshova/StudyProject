@@ -1,4 +1,6 @@
-public class Lesson_6 {
+package Lesson_6;
+
+public class Main {
     //вывод информации об объектах
     public static void main(String[] args) {
         //1

@@ -2,7 +2,7 @@ package Lesson_4;
 
 import java.util.Arrays;
 
-public class Lesson_4 {
+public class Main {
         public static void main(String[] myargs) {
             printThreeWords();
             checkSumSign();
