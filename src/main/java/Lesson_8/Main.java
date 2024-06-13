@@ -17,19 +17,16 @@ public class Main {
     }
 
     public static int sumArrayElements(String[][] array) throws MyArraySizeException, MyArrayDataException {
-        int sum = 0;
-        int rows = array.length;
-        int cols = array[0].length;
-
-        if (rows!= 4 || cols != 4) {
-            throw new MyArraySizeException();
+        if (array.length!=4 || array[0].length !=4) {
+            throw new MyArraySizeException("Массив должен быть 4х4");
         }
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
                 try {
                     sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
-                    throw new MyArrayDataException(i, j);
+                    throw new MyArrayDataException("Неверные данные в ячейке [" + i + "][" + j + "]");
                 }
             }
         }
