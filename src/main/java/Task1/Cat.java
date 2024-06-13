@@ -8,7 +8,6 @@ public class Cat extends Animal {
         super(name);
         catCount++;
     }
-
     @Override
     void run(int distance) {
         if (distance <= 200) {
@@ -17,13 +16,10 @@ public class Cat extends Animal {
             System.out.println(name + " не может пробежать " + distance + " м ");
         }
     }
-
     @Override
     void swim(int distance) {
-
         System.out.println(name + "не умеет плавать");
     }
-
     public void eatFromBowl(Bowl bowl) {
         if (!isFull) {
             isFull = true;
@@ -32,9 +28,7 @@ public class Cat extends Animal {
             System.out.println("Коту " + name + " не хватило еды");
         }
     }
-
     public boolean isFull() {
         return isFull;
     }
 }
-

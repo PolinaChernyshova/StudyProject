@@ -7,13 +7,15 @@ public class Task1 {
         Bowl bowl = new Bowl(15);
         for (Cat cat : cats) {
             cat.eatFromBowl(bowl);
+            System.out.println(cat.isFull());
         }
 
-        //Добавление еlы в миску
+        //Добавление еды в миску
         bowl.addFood(2);
-        //Заставляем бежать собаку
 
         dogBobik.run(200);
+        dogBobik.swim(15);
+
 
         //Подсчет животных
         System.out.println("Всего животных: " + Animal.animalCount);

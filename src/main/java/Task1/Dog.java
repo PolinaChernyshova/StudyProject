@@ -6,7 +6,6 @@ public class Dog extends Animal {
         super(name);
         dogCount++;
     }
-
     @Override
     void run(int distance) {
         if (distance <= 500) {
@@ -15,7 +14,6 @@ public class Dog extends Animal {
             System.out.println(name + " не может пробежать " + distance + " м ");
         }
     }
-
     @Override
     void swim(int distance) {
         if (distance <= 10) {

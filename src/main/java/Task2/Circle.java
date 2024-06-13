@@ -11,10 +11,8 @@ public class Circle implements Shape {
     }
     @Override
     public double getPerimeter() {
-
         return 2 * Math.PI * radius;
     }
-
     @Override
     public double getArea() {
         return Math.PI * Math.pow(radius, 2);
@@ -23,7 +21,6 @@ public class Circle implements Shape {
     public String getFillColor() {
         return fillColor;
     }
-
     @Override
     public String getBorderColor() {
         return borderColor;
