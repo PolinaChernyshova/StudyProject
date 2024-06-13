@@ -1,6 +1,6 @@
 package Task1;
 
-public class Main {
+public class Task2 {
     public static void main(String[] args) {
         Dog dogBobik = new Dog("Бобик");
         Cat[] cats = {new Cat("Вася"), new Cat("Гав"), new Cat("Рыжик")};
