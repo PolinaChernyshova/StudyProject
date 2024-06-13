@@ -1,7 +1,4 @@
 package Lesson_6;
-
-import java.util.SortedMap;
-
 public class Main {
     //вывод информации об объектах
     public static void main(String[] args) {
